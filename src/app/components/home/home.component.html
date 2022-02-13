@@ -1,0 +1,242 @@
+<!-- Hero Banner-->
+<section class="hero-home bg-cover bg-center" style="background: url(assets/images/home-banner.d5d76471.jpg)">
+    <div class="container index-forward py-5 mb-5">
+      <div class="row text-white">
+        <div class="col-lg-8">
+          <h2 class="text-uppercase mb-0 text-shadow">Bem-vindo à</h2>
+          <h1 class="text-uppercase mb-0 text-shadow">Recursos Educacionais!</h1>
+          <p class="h5 my-4 text-shadow">Aqui reunimos os melhores conteúdos acadêmicos de TI!</p>
+          <p>Quer saber mais sobre os próximos eventos de tecnologia da sua cidade? 
+            Quer acesso exclusivo aos melhores materiais de estudo?</p><a class="btn btn-light text-primary px-5" href="#resources">Clique aqui</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Info Section-->
+  <section class="info p-0 bg-light">
+    <div class="container bg-white">
+      <div class="row py-5 border-top border-md border-primary">
+        <div class="col-lg-4 border-right mb-4 mb-lg-0">
+          <div class="px-4">
+            <p class="text-primary mb-0 font-weight-normal">Resources</p>
+            <h3 class="h5">Onde estão os recursos mais valiosos</h3>
+            <p class="text-muted mb-0 text-small">Nessa seção você poderá ter acesso a diversos conteúdos de todos os tipos!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 border-right mb-4 mb-lg-0">
+          <div class="px-4">
+            <p class="text-primary mb-0 font-weight-normal">Courses</p>
+            <h3 class="h5">Onde divulgamos os cursos mais aprofundados</h3>
+            <p class="text-muted mb-0 text-small">Nessa seção você ficará sabendo dos melhores cursos do momento para aprimorar os seus conhecimentos!</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="px-4">
+            <p class="text-primary mb-0 font-weight-normal">Events</p>
+            <h3 class="h5">Onde divulgamos os eventos mais quentes</h3>
+            <p class="text-muted mb-0 text-small">Nessa seção você ficará por dentro dos maiores eventos de tecnologia do país!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Resources Section-->
+  <section class="services" id="resources">
+    <div class="container text-center">
+      <h2 class="text-uppercase lined lined-center">Nossos últimos  <span class="text-primary">Resources</span></h2>
+      <p class="text-muted mb-5">Veja abaixo nossos recursos mais recentes.</p>
+      <div class="row">
+        <div *ngFor="let rec of resources" class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+          <a>
+          <div class="card services-item border-0 card-mouse">
+            <div class="card-body border-top border-md border-primary py-5 px-4 shadow-sm">
+              <h2 class="h6 mb-0 services-item-heading">{{ rec.titulo }}</h2>
+              <div class="my-4">
+                <img src="../../../assets/images/{{ rec.imagem }}" class="w-100 img-thumbnail" alt="portfolio item">
+              </div>
+              <p class="services-item-text text-small mb-0">{{ rec.descricao }}</p>
+            </div>
+          </div>
+          </a>
+        </div>
+     </div>
+    </div>
+  </section>
+  <!-- Doctors Section-->
+  <section class="doctors bg-light">
+    <div class="container text-center">
+      <h2 class="text-uppercase lined lined-center">Nossos últimos  <span class="text-primary">Courses</span></h2>
+      <p class="text-muted mb-5">Veja abaixo nossos cursos mais recentes.</p>
+      <div class="row">
+            <!-- Doctor-->
+            <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+              <div class="card doctor border-0">
+                <div class="card-body p-0 shadow-sm">
+                  <div class="position-relative"><img class="img-fluid border-top border-md border-primary" src="assets/images/doctor-1.8c56c2fe.png" alt="">
+                    <div class="doctor-overlay">   
+                      <ul class="list-inline mb-0 doctor-social">
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-youtube"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h6 class="mb-0">Dr Jassa Singh</h6>
+                    <p class="text-muted text-small mb-0">Senior Dr. at Delmont</p>
+                  </div><a class="btn btn-block btn-primary" href="#">Make appointmet</a>
+                </div>
+              </div>
+            </div>
+            <!-- Doctor-->
+            <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+              <div class="card doctor border-0">
+                <div class="card-body p-0 shadow-sm">
+                  <div class="position-relative"><img class="img-fluid border-top border-md border-primary" src="assets/images/doctor-2.513be8f2.png" alt="">
+                    <div class="doctor-overlay">   
+                      <ul class="list-inline mb-0 doctor-social">
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-youtube"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h6 class="mb-0">Dr Ajay</h6>
+                    <p class="text-muted text-small mb-0">Cardiologist Specialist</p>
+                  </div><a class="btn btn-block btn-primary" href="#">Make appointmet</a>
+                </div>
+              </div>
+            </div>
+            <!-- Doctor-->
+            <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+              <div class="card doctor border-0">
+                <div class="card-body p-0 shadow-sm">
+                  <div class="position-relative"><img class="img-fluid border-top border-md border-primary" src="assets/images/doctor-3.11683e5a.png" alt="">
+                    <div class="doctor-overlay">   
+                      <ul class="list-inline mb-0 doctor-social">
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-youtube"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h6 class="mb-0">Dr Jas</h6>
+                    <p class="text-muted text-small mb-0">Neurology Specialist</p>
+                  </div><a class="btn btn-block btn-primary" href="#">Make appointmet</a>
+                </div>
+              </div>
+            </div>
+            <!-- Doctor-->
+            <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+              <div class="card doctor border-0">
+                <div class="card-body p-0 shadow-sm">
+                  <div class="position-relative"><img class="img-fluid border-top border-md border-primary" src="assets/images/doctor-4.a9621be9.png" alt="">
+                    <div class="doctor-overlay">   
+                      <ul class="list-inline mb-0 doctor-social">
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a class="doctor-social-link" href="#"><i class="fab fa-youtube"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h6 class="mb-0">Dr Harjas</h6>
+                    <p class="text-muted text-small mb-0">Senior Рathologist</p>
+                  </div><a class="btn btn-block btn-primary" href="#">Make appointmet</a>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="container text-center">
+      <h2 class="text-uppercase lined lined-center">Nossos últimos  <span class="text-primary">Resources</span></h2>
+      <p class="text-muted mb-5">Veja abaixo nossos recursos mais recentes.</p>
+      <div class="row">
+            <!-- Services Item-->
+            <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+              <div class="card services-item border-0">
+                <div class="card-body border-top border-md border-primary py-5 px-4 shadow-sm">
+                  <h2 class="h6 mb-0 services-item-heading">Qualified Facilities</h2>
+                  <div class="services-icon my-4"><i class="fas fa-procedures fa-2x"></i></div>
+                  <p class="services-item-text text-small mb-0">Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Services Item-->
+            <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+              <div class="card services-item border-0">
+                <div class="card-body border-top border-md border-primary py-5 px-4 shadow-sm">
+                  <h2 class="h6 mb-0 services-item-heading">Top Level Doctors</h2>
+                  <div class="services-icon my-4"><i class="fas fa-user-md fa-2x"></i></div>
+                  <p class="services-item-text text-small mb-0">Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Services Item-->
+            <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+              <div class="card services-item border-0">
+                <div class="card-body border-top border-md border-primary py-5 px-4 shadow-sm">
+                  <h2 class="h6 mb-0 services-item-heading">Dedicated Patient Care</h2>
+                  <div class="services-icon my-4"><i class="fas fa-notes-medical fa-2x"></i></div>
+                  <p class="services-item-text text-small mb-0">Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Services Item-->
+            <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+              <div class="card services-item border-0">
+                <div class="card-body border-top border-md border-primary py-5 px-4 shadow-sm">
+                  <h2 class="h6 mb-0 services-item-heading">24/7 Emergency</h2>
+                  <div class="services-icon my-4"><i class="fas fa-ambulance fa-2x"></i></div>
+                  <p class="services-item-text text-small mb-0">Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new.</p>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section-->
+  <section class="contact py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="d-flex align-items-center">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="ml-3">       
+              <h3 class="h5 mb-0">+55 (21) 99595-9595</h3>
+              <p class="small mb-0">Quer saber mais sobre o projeto?</p>
+              <p class="small mb-0">Ligue pra gente!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="d-flex align-items-center">
+            <div class="contact-icon"><i class="far fa-envelope"></i></div>
+            <div class="ml-3">       
+              <h3 class="h5 mb-0">gmartinho.dev@gmail.com</h3>
+              <p class="small mb-0">Precisa de ajuda?</p>
+              <p class="small mb-0">Nos mande um e-mail!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center">
+            <div class="contact-icon"><i class="far fa-clock"></i></div>
+            <div class="ml-3">       
+              <h3 class="h5 mb-0">Seg – Sex 09:00 – 18:00</h3>
+              <p class="small mb-0">Funcionamos a todo vapor para tirar todas as suas dúvidas!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
